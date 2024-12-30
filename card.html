@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Details</title>
+
+
+
+<style>
+
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #757778;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: #cce7ff;
+}
+
+.account-form {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.account-form h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.account-form form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.account-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.account-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.account-form input:focus {
+  border-color: #0070ba;
+  outline: none;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #0070ba;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.cta-button:hover {
+  background-color: #005c99;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0070ba;
+  color: white;
+  font-size: 14px;
+}
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">CARDS AMOUNT TRANSFER</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="send.html">Send Money</a></li>
+        <li><a href="card.html">Account</a></li>
+        <li><a href="contact.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="account-form">
+      <h1>Account Details</h1>
+      <form action="#" method="POST">
+        <label for="account-holder">Account Holder Name</label>
+        <input type="text" id="account-holder" name="account-holder" placeholder="John Doe" required>
+
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+
+        <label for="expiry-date">Expiration Date</label>
+        <input type="month" id="expiry-date" name="expiry-date" required>
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="4" required>
+
+        <button type="submit" class="cta-button">Save Details</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 PayPal Clone. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
